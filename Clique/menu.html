@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Menu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Clique">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -136,37 +137,35 @@
 	<div class="box bg1">
 		<div class="box-sub">Food</div>
 		<div class="circle c1"><i class="icon-bowl"></i></div>
-		<a href="#popup1" onclick="toggle()">Order Up</a>
+		<a href="#" class="btn" data-popup="popup1" onclick="toggle()">Order Up</a>
 	</div>
 	<div class="box bg2">
-		
 		<div class="box-sub">Drinks</div>
 		<div class="circle c2"><i class="icon-cup"></i></div>
-		<a href="#popup2" onclick="toggle()">Order Up</a>
+		<a href="#" class="btn" data-popup="popup2" onclick="toggle()">Order Up</a>
 	</div>
 	<div class="box bg3">
-		
 		<div class="box-sub">Cocktails</div>
 		<div class="circle c3"><i class="icon-drink"></i></div>
-		<a href="#popup3" onclick="toggle()">Order Up</a>
+		<a href="#" class="btn" data-popup="popup3" onclick="toggle()">Order Up</a>
 	</div>
 </div>
 
-<div id="popup1">
+<div class="popup" id="popup1">
 	<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, distinctio. Blanditiis magnam sit consectetur, molestiae amet
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vero corrupti maiores veniam aliquam nesciunt repellat praesentium facere quisquam commodi, eveniet repudiandae perferendis nobis porro temporibus</p>
 		<a href="#" onclick="toggle()">Close</a>
 	</h2>
 </div>
 
-<div id="popup2">
+<div class="popup" id="popup2">
 	<h2>ipsum dolor sit amet consectetur adipisicing elit. Est, distinctio. Blanditiis magnam sit consectetur, molestiae amet
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vero corrupti maiores veniam aliquam nesciunt repellat praesentium facere quisquam commodi, eveniet repudiandae perferendis nobis porro temporibus</p>
 		<a href="#" onclick="toggle()">Close</a>
 	</h2>
 </div>
 
-<div id="popup3">
+<div class="popup" id="popup3">
 	<h2>dolor sit amet consectetur adipisicing elit. Est, distinctio. Blanditiis magnam sit consectetur, molestiae amet
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, vero corrupti maiores veniam aliquam nesciunt repellat praesentium facere quisquam commodi, eveniet repudiandae perferendis nobis porro temporibus</p>
 		<a href="#" onclick="toggle()">Close</a>
@@ -294,7 +293,14 @@
 		popup3.classList.toggle('active');
 	}
 </script>
+<script type="text/javascript">
+	$('.btn').click(function(){
+		$('.popup').hide();
+		$('#' + $(this).attr('data-popup')).show();
+	})
 
-	</body>
+</script>
+
+</body>
 </html>
 

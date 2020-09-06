@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Reservations</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Clique">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -112,17 +113,18 @@
 						<div class="row form-group">
                             <div class="col-md-4">
 								<!-- <label for="name">Name</label> -->
-								<input type="text" id="name" class="form-control" placeholder="Your Name">
+								<input style="margin-top: 10px;" type="text" id="name" class="form-control" placeholder="Your Name">
 							</div>
 							<div class="col-md-4">
 								<!-- <label for="email">Email</label> -->
-								<input type="text" id="email" class="form-control" placeholder=" Your Email">
+								<input style="margin-top: 10px;" type="text" id="email" class="form-control" placeholder=" Your Email">
                             </div>
                             <div class="col-md-4">
-								<!-- <label for="name">Name</label> -->
-								<input type="text" id="phone" class="form-control" placeholder="Phone Number">
+								<!-- <label for="name">phone</label> -->
+								<input style="margin-top: 10px;" type="text" id="phone" class="form-control" placeholder="Phone Number">
 							</div>
 							<div class="col-md-4">
+								<!-- <label for="name">Preference</label> -->
 								<select class="form-control" style="margin-top: 30px;" id="default-select" placeholder="Preferred drink">
 									<option value="1">Preferred drink</option>
 									<option value="2">Drink 2</option>
@@ -132,6 +134,7 @@
 							</div>
 							
 							<div class="col-md-4">
+								<!-- <label for="name">Preference</label> -->
 								<select class="form-control" style="margin-top: 30px;" id="default-select" placeholder="Preferred service">
 									<option value="1">Preferred service</option>
 									<option value="2">Choose services 2</option>
@@ -140,24 +143,24 @@
 								</select>
 							</div>
                             <div class="col-md-4">
-							<!-- <label for="subject">Subject</label> -->
+							<!-- <label for="subject">Message</label> -->
 							<textarea style="margin-top: 10px;" name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
 							</div>
                         </div>
                         <div class="row form-group">
 							
 							<div class="col-md-4">
-								<!-- <label for="name">Name</label> -->
-								<input type="number" id="number" class="form-control" placeholder="Number of People">
+								<!-- <label for="name">Number of people</label> -->
+								<input style="margin-top: 10px;" type="number" id="number" class="form-control" placeholder="Number of People">
 							</div>
 							
                             <div class="col-md-4">
-								<!-- <label for="name">Name</label> -->
-								<input id="datepicker" class="form-control" placeholder="MM/DD/YYYY">
+								<!-- <label for="name">Date</label> -->
+								<input style="margin-top: 10px;" id="datepicker" class="form-control" placeholder="MM/DD/YYYY">
 							</div>
 							<div class="col-md-4">
-								<!-- <label for="email">Email</label> -->
-								<input id="timepicker" class="form-control" placeholder="Time">
+								<!-- <label for="email">Time</label> -->
+								<input style="margin-top: 10px;" id="timepicker" class="form-control" placeholder="Time">
                             </div>
 						</div>
 						
@@ -301,16 +304,16 @@
 	</script>
 	<script>
         $('#datepicker').datepicker({
-            iconsLibrary: 'font-awesome.min',
+            iconsLibrary: 'icomoon.css',
             disableDaysOfWeek: [0, 0],
         //     icons: {
-        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //      rightIcon: '<span class="icon-arrow-down"></span>'
         //  }
         });
         $('#datepicker2').datepicker({
-            iconsLibrary: 'font-awesome.min',
+            iconsLibrary: 'icomoon.css',
             icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
+             rightIcon: '<span class="icon-arrow-down"></span>'
          }
 
         });
@@ -318,16 +321,5 @@
          format: 'HH.MM'
      });
     </script>
-	
-	 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-
 	</body>
 </html>
