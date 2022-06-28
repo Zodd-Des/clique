@@ -6,4 +6,4 @@ It Outlines a digital presence for the lounge where it has features of making re
 
 The Website is fully responsive and outlines a very attractive front-end outlining the various pages and menus
 
-It is built with technologies such as HTML, CSS and Javascript/Javascript libraries for cool UI effects
+It is built with technologies such as HTML5, CSS3 and Javascript(jQuery)/ libraries for cool UI effects
